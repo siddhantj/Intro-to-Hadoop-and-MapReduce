@@ -1,10 +1,11 @@
 #!/usr/bin/python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 from datetime import datetime
 import csv
 import sys
 import pdb
+
 
 def mapper():
     reader = csv.reader(sys.stdin, delimiter='\t')
@@ -24,7 +25,5 @@ def mapper():
 
     except:
         pass
-
-
 
 mapper()

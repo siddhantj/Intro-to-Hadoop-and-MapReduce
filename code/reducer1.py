@@ -1,7 +1,8 @@
 #!/usr/bin/python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 import sys
+
 
 def reducer():
     hour_dict = {}
@@ -24,10 +25,10 @@ def reducer():
             hour_dict[hour] = hr_count
         else:
             continue
-    do_comparision(hour_dict, old_user)  # for last hour entry
+    do_comparison(hour_dict, old_user)  # for last hour entry
 
 
-def do_comparision(hour_dict, old_user):
+def do_comparison(hour_dict, old_user):
     hour_list = sorted(hour_dict, key=hour_dict.__getitem__, reverse=True)
     highest_hr = hour_list[0]
     print '{0}\t{1}'.format(old_user, highest_hr)
