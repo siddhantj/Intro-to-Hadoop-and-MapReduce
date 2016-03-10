@@ -25,6 +25,8 @@ def reducer():
         else:
             continue
     do_comparision(hour_dict, old_user)  # for last hour entry
+
+
 def do_comparision(hour_dict, old_user):
     hour_list = sorted(hour_dict, key=hour_dict.__getitem__, reverse=True)
     highest_hr = hour_list[0]
